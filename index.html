@@ -22,15 +22,18 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
 
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
-
+ <script src="js/jQuery.js"></script>
+<script src="js/helper.js"></script>
 
 
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
 
+  
 <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -87,11 +90,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   the DOM. jQuery is fast and easy to use, but it doesn't do anything
   you can't accomplish with vanilla (regular) JavaScript.
   -->
-  <script src="js/jQuery.js"></script>
-
-  <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+ 
   <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
@@ -145,5 +144,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('mapDiv').style.display = 'none';
     }
   </script>
+    
 </body>
 </html>
